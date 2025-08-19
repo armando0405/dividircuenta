@@ -14,6 +14,6 @@ import PeopleView from './PeopleView.vue';
 .main-container {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    min-height: 100vh; /* Cambié de height a min-height */
 }
 </style>

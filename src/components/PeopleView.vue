@@ -16,16 +16,15 @@ import PersonComponent from './PersonComponent.vue';
                 <LabelComponet title="faltante" :value="store.params.remaining" />
             </div>
         </div>
-    </div>
 
-    <div class="people-container">
-
-        <PersonComponent v-for="person in store.people" :key="person.id" 
-         :id="person.id"
-         :number-of-person="person.numberOfPerson"
-         :total-por-person="person.totalPorPerson"
-         :paid="person.paid"       
-        />
+        <div class="people-container">
+            <PersonComponent v-for="person in store.people" :key="person.id" 
+             :id="person.id"
+             :number-of-person="person.numberOfPerson"
+             :total-por-person="person.totalPorPerson"
+             :paid="person.paid"       
+            />
+        </div>
     </div>
 
 </template>
@@ -69,6 +68,8 @@ import PersonComponent from './PersonComponent.vue';
     justify-content: space-between;
     gap: 10px;
     flex-direction: column;
-    width: 100%;
+    width: 800px; /* Mismo ancho que people-container */
+    margin: 0 auto; /* Centrar horizontalmente */
+    text-align: center; /* Centrar el texto */
 }
 </style>

@@ -41,7 +41,8 @@ function hadleSubmit(){
 form {
     width: 400px;
     background-color: #17814e;
-    height: 100vh; /* Asegúrate que esto esté */
+    min-height: 100vh; /* Cambié height por min-height */
+    height: 100%; /* Agregué para que tome toda la altura disponible */
     display: flex;
     align-items: center;
     color: white;
