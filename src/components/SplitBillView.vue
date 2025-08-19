@@ -9,7 +9,7 @@ import PeopleView from './PeopleView.vue';
         <PeopleView />
     </div>
 </template>
-
+    
 <style scoped>
 .main-container {
     display: flex;
